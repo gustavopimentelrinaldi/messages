@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="app" style="text-align: center;">
+    <h1>{{title}}</h1>
+
+    <div v-for="message in conversation" :key="message.created_at" style="padding-bottom: 15px;">
+      <h3 style="color:rgba(80, 156, 156, 0.945)">{{message.sender}}</h3>
+      <h4>{{message.created_at}}</h4>
+      <p style="font-size: 20px; border: 1px solid grey;">{{message.text}}</p>
+    </div>
+
+  </div>
+
+  
+
+  <script src="./vue/vue.js"></script>
+  <script src="./main.js"></script>
+ 
+</body>
+</html>
